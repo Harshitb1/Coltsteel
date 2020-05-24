@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="ImageGalleryStyle.css">
+</head>
+<body>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom ">
+				<!-- navbar-expand-lg means the burger icon will expand into contents when entered large -->
+				<!-- this class can be changed to md sm etc as per requirement and is compulsory -->
+				<div class="container">
+			  		<a class="navbar-brand" href="#">
+			  				<svg class="bi bi-card-image" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+							  <path d="M10.648 7.646a.5.5 0 01.577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 01.63-.062l2.66 1.773 3.71-3.71z"/>
+							  <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd"/>
+							</svg>		
+			  		 IMGS</a>
+			  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			  	<!-- data target and the id of the div element inside which we have the content or the ul which needs to be collapsed has to be same -->
+			    	<span class="navbar-toggler-icon"></span>
+			  		</button>
+			  		<div class="collapse navbar-collapse" id="navbarText">
+			    		<ul class="navbar-nav mr-auto">
+			      			<li class="nav-item">
+			        			<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+			      			</li>
+			      			<li class="nav-item">
+			        			<a class="nav-link" href="#">Contact</a>
+			      			</li>
+			    		</ul>
+			    <ul class="navbar-nav">
+			    	
+			      <li class="nav-item ">
+			        <a class="nav-link" href="#">Sign Up <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Sign In</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="jumbotron" >
+				<h1><svg class="bi bi-camera" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					  <path d="M9 5C7.343 5 5 6.343 5 8a4 4 0 014-4v1z"/>
+					  <path fill-rule="evenodd" d="M14.333 3h-2.015A5.97 5.97 0 009 2a5.972 5.972 0 00-3.318 1H1.667C.747 3 0 3.746 0 4.667v6.666C0 12.253.746 13 1.667 13h4.015c.95.632 2.091 1 3.318 1a5.973 5.973 0 003.318-1h2.015c.92 0 1.667-.746 1.667-1.667V4.667C16 3.747 15.254 3 14.333 3zM1.5 5a.5.5 0 100-1 .5.5 0 000 1zM9 13A5 5 0 109 3a5 5 0 000 10z" clip-rule="evenodd"/>
+					  <path d="M2 3a1 1 0 011-1h1a1 1 0 010 2H3a1 1 0 01-1-1z"/>
+					</svg>
+				 The Image Gallery</h1>
+				<p> A bunch of beautiful images that I didnt expect it to be taken by me!</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1558980664-1db506751c6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1562887245-f2d5024f6134?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584799188216-0ec4f4975f39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584565169355-cc2c1b381589?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584761696377-008e22a7fb15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584712200430-ccb3d3dfddc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584732057367-0638a43323dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584757850888-17dcbd493fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<img class="img-thumbnail" src="https://images.unsplash.com/photo-1584797802294-190bd128cc83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+			</div>
+		</div> 
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
+
+
+

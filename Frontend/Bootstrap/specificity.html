@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specificity Example</title>
+	<style type="text/css">
+		body{
+			color: red;
+		}
+
+		ul{
+			color: blue;
+		}
+		/*it will change to blue as we are agin specifying it to be blue this is specificity*/
+
+		li{
+			color: orange;
+		}
+ 
+ /*now it will change to  orange*/
+ 		.highlight{
+ 			color:black;
+ 		}
+ 		/*now the class wins hence black*/
+ 		#special{
+ 			color: pink;
+ 		}
+ 		/*id wins the id wins over class as well */
+
+
+		/*we are just changing the color of the body which is the parent but it is making everything inside it red that means it is affecting the child as well*/
+
+		/*hence it will apply the changes of the element which is more specific or close to the target*/
+	</style>
+</head>
+<body>
+
+<h1>List of Colors</h1>
+	<ul>
+		<li class="highlight">red</li>
+		<li class="highlight">yellow</li>
+		<li id= "special">green</li>
+	</ul>
+
+</body>
+</html>

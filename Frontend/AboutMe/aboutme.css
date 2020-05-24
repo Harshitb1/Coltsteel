@@ -1,0 +1,27 @@
+h1{
+	color: red;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid; */
+
+	/*all the three attributes must be present to show the changes*/
+	border: 5px solid purple;
+	/*one shorthand for all the three lines*/
+
+}
+li{
+	color: green;
+}
+h4{
+	color: purple;
+	background: rgb(255,100,80);
+}
+body{
+	/*background: url("sadgi.jpg");
+	background-repeat: no-repeat; 
+	no repeat attribute will make sure that the background image is not repeated n tiled
+	/*in case it is smaller in size */
+	/*but in this case it wont be able to cover the whole screen*/
+	/*background-size: cover;*/*/
+	/*this will cover the whole place*/
+}

@@ -1,0 +1,43 @@
+p{
+	font-family: Arial;
+	font-size: 40px;
+}
+
+h1{
+	font-family: Georgia;
+	/*font-size: 200px;*/
+	/*em is a relative font size*/
+} 
+
+span{
+	font-size: 2.0em;
+}
+/*that means double the font size of the enclosing element*/
+/*now 1 ques is what is the initial value of em unfortunately it is dependent on the browser hence we make a parent seize then inherit all others with it*/
+/*eg*/
+body{
+	font-size: 10px;
+}
+h1{
+	font-size: 5em;
+	text-align: center;
+	/*ie five times 10;*/
+}
+p{
+	font-size: 2em;
+	/*ie twice of 10*/
+}
+span{
+	font-size: 2em;
+	/*because it has p as the parent n nt body*/
+}
+p{
+	font-weight: bold; 
+	line-height: 2;  
+	text-decoration: underline;
+	text-decoration: line-through;
+	/*is basically line spacing this means 2 mul by the font's inherited size*/
+}
+/*some fonts provide weight no from 100 to 800 like 100 200 300 400... so on but this depends on the font used*/
+ /*you can use google fonts also just include a link- href tag in html as specified on the site and here in css change the font name for that particular element*/
+ 

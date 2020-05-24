@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second page</title>
+</head>
+<body>
+<h1>This is the second page</h1>
+
+<table border="1">
+	<!-- this way of putting border is not nice we usually use css for that -->
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>Rusty</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Ekta</td>
+		<td>13 </td>
+	</tr>
+
+	<!-- tr is for each row and td is for each cell and th for cell as heading that is table head-->
+
+	<!-- here there is no distiction between tr of heading and tr of other data for that we have another way of doing it -->
+</table>
+
+<table border="1">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Rusty</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Ekta</td>
+		<td>13 </td>
+	</tr>
+	</tbody>
+	<!-- so there is no diff in the two but its better as the browser will no that this is the table head and this is the body and hence can be  treated differently -->
+</table>
+</body>
+</html>

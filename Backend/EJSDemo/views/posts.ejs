@@ -1,0 +1,15 @@
+<%- include ("partials/header") %>
+
+ <!-- slash/ is imp as / means find the file app.css in the root directory and not only in the same directory -->
+<h1> The Posts Pgae</h1>
+
+
+<% posts.forEach(function(post){ %>
+    <li>
+        <%= post.title %> - <strong><%= post.author %></strong>
+    </li>
+<% }); %>
+
+<%- include ("partials/footer") %>
+
+

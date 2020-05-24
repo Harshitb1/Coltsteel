@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>  
+	<div class="container">
+	<ul class="nav border border-primary flex-column flex-sm-row align-items-center justify-content-around">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="#">Active</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h1 class="text-center display-4">FlexBox</h1>
+		<div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
+			<!-- around center between end etc -->
+			<!-- flex box means all our content is made inside a box. by default the flex box is from left to right that means the start if from left and end id from right. the cross axis is from top to bottom. start top n end bottom
+				main axis ie from left to right -->
+			<button class="btn btn-info btn-lg">Large</button>
+			<button class="btn btn-warning btn-sm">Small</button>
+		</div>
+
+		<div class="border border-dark d-flex justify-content-start align-items-end flex-row-reverse" style="height: 200px">
+			
+			<button class="btn btn-info btn-lg">Large</button>
+			<button class="btn btn-warning btn-sm">Small</button>
+		</div>
+
+		<div class="border border-dark d-flex justify-content-end flex-column align-items-start" style="height: 200px">
+			<!-- when we use flex column then the  major  axis becomes top to bottom hence justify content end will stack all of it starting from bottom now alig items refer to left to right-->
+			<button class="btn btn-info btn-lg">Large</button>
+			<button class="btn btn-warning btn-sm">Small</button>
+		</div>
+
+		<div class="border border-dark d-flex justify-content-end flex-column-reverse align-items-start" style="height: 200px">
+			<!-- column reverse just like row reverse simply means now col start at the bottom and end at the top -->
+			<button class="btn btn-info btn-lg">Large</button>
+			<button class="btn btn-warning btn-sm">Small</button>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+			<button class="btn btn-warning btn-lg"> Cilick </button>
+			<button class="btn btn-warning btn-lg"> Cilick </button>
+			<button class="btn btn-warning btn-lg"> Cilick </button>
+			<button class="btn btn-warning btn-lg"> Cilick </button>
+			<button class="btn btn-warning btn-lg"> Cilick </button>
+		</div>
+	</div> 	
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>

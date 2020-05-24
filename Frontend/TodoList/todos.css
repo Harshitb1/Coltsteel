@@ -1,0 +1,60 @@
+body{
+	background: orange;
+}
+#first{
+	color: purple;
+	background: white;
+}
+.highlighted{
+	background: yellow;
+}
+
+.completed{
+	text-decoration: line-through;
+}
+
+/*some more selectors:*/
+/** (star) selector*/
+/*whateva we do applies everysingle element*/
+/*descended selector*/
+/*takes two or more selectors n chain them together*/
+/*for example we just want to select all the anchor tags inside the li but nt the ones who are outside it*/
+/*in such case we use desendents*/
+li a {
+ color : red;
+}
+h1 + ul{
+	border: 2px solid red;
+} 
+/*+ means adjacent while without plus it would be like ul inside h1*/
+
+/*li .classname{
+
+}*/
+/*this means all the tags with class classname inside the li*/
+
+/*Adjacent selector*/
+/*this let us select nt the nested ones but the one after another */
+/*ie it let us select a sibling*/
+/*sibling means on the same level  nt nested*/
+
+/*Atribute selector*/
+/*selection based on any attribute*/
+
+a[href="http://www.google.com"]{
+	background: blue;
+}
+/*another example
+input[type="text"]{
+}*/
+	
+/*nth of type*/
+ul:nth-of-type(2){
+	background: purple;
+}
+
+li:nth-of-type(even){
+	border: 2px solid green;
+}
+
+/*here all the even lis are altered*/

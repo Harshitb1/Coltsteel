@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<!-- in form first attributte ie action is the link where we have to send the data -->
+	<!-- method means typ of https request ie get or post request get-- retrieving data -->
+	<!-- post-- sending data added to db posted to the server -->
+
+	<h1>Sign In</h1>
+	<form action="http://www.wikipedia.org">
+		<!-- way 1 for using label tag -->
+		<label>
+			Username:
+		<input type="text" name="Username" placeholder="Username" required>	
+		</label>
+<!-- way 2 for using label tag -->
+		<label for="password">Password:</label>
+			<input id="password" type="password" name="password" placeholder="Password"
+			required="true">
+
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email" placeholder="e-mail"
+			required="true">
+		
+		
+		
+		<!-- <input type="color" >
+		<input type="radio" >
+		<input type="date" > -->
+		<input type="submit">
+		<h3>gender</h3>
+		<label for="Male">Male</label>
+		<input  id="Male"type="radio" name="gender" value="MALE">
+		<label for="Female">Female</label>
+		<input  id="Female"type="radio" name="gender" value="FEMALE">
+		<!-- name attribute is the one connectiong mael and female else we could have chosen both of them together but here we can choose only one (ie the case without name attribute) and the name must be same for all the options -->
+
+		<!-- if we wont put value in the input tag, when we send the data with get request u will see the query string changed as gender=on but we want it to show wat is the actual value of the choice hence we put the value attribute -->
+
+		<p>Whats your fav color?</p>
+		<select name="color">
+			<!-- if there is no name attribute, the query string wont be updated ie wont be sent -->
+			<option value="RED">red </option>
+			<option value="ORANGE">orange </option>
+			<!-- value tag is used to specify that we want something else (other than the options) to be sent as the query string. ie the data -->
+			<option value="YELLOW">yellow </option>
+		</select>
+
+		<textarea name="data by user" rows="20" cols="50"> Write Something here</textarea>
+		<button>Login</button>
+
+
+		<!-- by defaukt if u dont specify an action it will take u to the same page again with all fields refreshed and the method is by default get request-->
+		<!-- if we use the name tag we will see the data added in the query string ie the url -->
+		<!-- hence through this we are giving names to our data so that we can retrieve them later -->
+
+		<!-- labels are imp for accessebility softwares for eg if you have a blind man using ur form his software will look for labels to know wat to fill in -->
+
+		<!-- required attribute is used for making a field in form compulsory but this is browser dependent, chrome will show a pop up of like you cant submit without writing it but we are nt sure how other browsers deals with it -->
+	</form>
+
+
+
+</body>
+</html>

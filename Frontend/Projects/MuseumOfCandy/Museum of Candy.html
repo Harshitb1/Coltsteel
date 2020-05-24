@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Museum Of Candy</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Museum of Candy.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="mainNavbar"class="navbar navbar-dark  navbar-expand-md py-0 fixed-top">
+		<!-- paading 0 we use pt-0 pb-0 but we can also use py-0 which is for y axis padding -->
+		<a href="#" class="navbar-brand">CANDY</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation" >
+			<!-- aria label is just a label to tell you what a button does -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navLinks">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">TICKETS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div class="col-lg-6 mt-8">
+				<!-- we want it to cover 6 units after lg before that its default n here default means 100% that means it will stack up -->
+				<div id="headinggroup"class="text-center text-white d-none d-lg-block">
+					<!-- display none to remove it but in this case it will be removed for all sizes -->
+					<!-- for that we specified d-lg-block that means it will start displaying now as a block -->
+					<h1 class="text-center "> MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+					
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<img class="img-fluid" src="Museum Candy Images/donut_hand.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid px-0">
+		<!-- align-items and justify-content classes are there for the row class only n cannot be used with the column class -->
+		<div class="row align-items-center content">
+			<div class="col-md-6 order-2 order-md-1">
+				<img class="img-fluid" src="Museum Candy Images/donutwithstraw.jpg">
+			</div>
+			<div class="col-md-6 text-center order-1 order-md-2">
+				<div class="row justify-content-center">
+					<div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+						<h2> Museum Of Candy</h2>
+						<img class="candyicon d-none d-lg-inline" src="Museum Candy Images/lolliicon.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+				
+			</div>
+			<!-- lead class is used just to just stand out the text -->
+		</div>
+
+		<div class="row align-items-center content">
+			
+			<div class="col-md-6 text-center">
+				<div class="row justify-content-center">
+					<div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+						<h2> Museum Of Candy</h2>
+						<img class="candyicon d-none d-lg-inline" src="Museum Candy Images/lolliicon.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-6">
+				<img class="img-fluid" src="Museum Candy Images/img2.jpg">
+			</div>
+		</div>
+	</section>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(function (){
+		$(document).scroll(function(){
+			var $nav = $("#mainNavbar");
+			$nav.toggleClass("scrolled", $(this).scrollTop()> $nav.height());
+		});
+	});
+</script>
+
+</html>

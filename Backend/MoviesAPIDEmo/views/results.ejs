@@ -1,0 +1,8 @@
+<h1>Results Page </h1>
+<ul>
+<% data.results.forEach((result) =>{ %>
+    <li> 
+       <strong> <%= result.title %> </strong> - <%= result.overview %> </li>
+<% }); %>
+</ul>
+<a href="/">back to Search</a>

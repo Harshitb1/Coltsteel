@@ -1,0 +1,21 @@
+p{
+	/*if u do not give any width u will notice that it covers the whole screen. Thats because the parent ie the parah tag is by default of that length*/
+	width: 200px;
+	/*we can give width in percent also where the percent is dependent on the parent ie dash percent of the parent*/
+	/*width: 50%;*/
+	/*like here it is 50% of the bady ie the parent*/
+	/*height: 100px;*/
+	border: 2px solid red;
+	padding: 10px;
+	/*this is all 4 side padding*/
+	/*padding-left: 40px;*/
+	/*n so on... use all sides for diff padding*/
+	margin: 30px;
+	/*use shorthand for all 4 sides*/
+	margin: 20px 40px 500px 100px;
+	margin: 0,auto,0,auto;
+	/*this will center it*/
+	/*top,right,bottom,left*/
+
+
+}

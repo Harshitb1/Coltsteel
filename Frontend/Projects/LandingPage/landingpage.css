@@ -1,0 +1,39 @@
+body{
+	background:url(https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Lato', sans-serif;
+}
+
+html{
+	height: 100%
+}
+/*although we have put the background image as cover and on the body still it wont cover it properly when window is resized, it will repeat itself hence we want it to cover the whole window size*/
+
+.btn-light {
+    border-color: #d3d3d3;
+        background-color: #ffffff;
+}
+#content{
+	text-align: center;
+	padding-top: 20%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				0px 8px 13px rgba(0,0,0,0.1),
+				0px 18px 23px rgba(0,0,0,0.1); 
+				
+}
+h1,h3{
+	color: white;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 4em;
+}
+
+hr{
+	color: white;
+	width: 400px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}

@@ -1,0 +1,94 @@
+/* arrange the css in order of the specificity like body then simple tags then classes ids then nested ones 
+also we have use uigradients.com for the background code */
+
+
+body{
+    font-family: Roboto;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    background: #2980B9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fa-plus{
+    float: right;
+}
+span{
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition:0.2s linear;
+    opacity: 0;
+}
+/* without opacity 0 we were able to see the icons even without hovering over so to get rid of that we added opacity 0 */
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+input{
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    /* when this border is not there earlier there was a slight diffrence between the width of the input n the lis so to compensate we added this invisible border equal to 3 px which is the width of the border 
+    focus we gave ie 3px */
+    border: 3px solid rgba(0, 0, 0, 0);
+
+    /* box sizing is done to make sure the input is not moving out of the div
+    actually the width= 100 perc does only include the content and not the padding margin etc 
+    so to tackle that we use the box model property and keep it to border size */
+    /* we here have to add mozrella and webkit lines of code to make sure it becomes browser friendly */
+    box-sizing: border-box;
+    color: #2980B9;
+    
+}
+/* this is a psuedo property just like button:hover for focusing something */
+input:focus{
+    background: white;
+    border: 3px solid #2980B9;
+    outline: none;
+    /* outline is the border selecter we get by default from the browser */
+}
+
+li{
+    background: white;
+    height: 40px;
+    /* line height is to make the line take the entire area and hence center */
+    line-height: 40px;
+    color: #666;
+
+}
+/* every second add 3n for every 3rd */
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}

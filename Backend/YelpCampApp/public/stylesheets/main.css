@@ -1,0 +1,15 @@
+
+#comment-stamp{
+    font-size: 0.8rem;
+    color: royalblue;
+}
+
+.card-gray-back{
+    margin-top: 5%;
+    background-color: #dcdcdc;
+}
+
+#addComment{
+    margin-top: 2%;
+    margin-right: 2%;
+}

@@ -1,0 +1,20 @@
+img{
+	width: 30%;
+	/*by only specifying width u will see that there is a default white space between the images*/
+	margin: 1.66%;
+	/*90 perc is used by the image bacha 10 perc is divided into 6 margins hence 10 divided by 6 = 1.66*/
+	float: left;
+	/*but as soon as we add foat which makes everything float acc to the gravity and float left means it will be aligned to the left then float*/
+	/*the white spaces would be vanished*/
+
+}
+
+p{
+	font-weight: bold;
+	margin-left: 1.66%;
+	text-transform: uppercase;
+	font-size: 23px;
+	border-bottom: 3px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 20px;
+}
